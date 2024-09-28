@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Advanced portfolio website for Mohin Uddin, logo designer.">
+  <title>Mohin Uddin | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#home" >My Portfolio</a>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()" >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="menu-links">
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <!-- Home Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Mohin Uddin</h1>
+      <p>Make your logo the best it can be.</p>
+      <a href="#portfolio" class="button">See My Work</a>
+    </div>
+  </section>
+
+  <!-- Portfolio Section (3x3 Grid) -->
+  <section id="portfolio" class="portfolio-section">
+    <h2>My Work</h2>
+    <div class="grid-container">
+      <div class="grid-item"><img src="logo1.jpg" alt="Logo 1"></div>
+      <div class="grid-item"><img src="logo2.jpg" alt="Logo 2"></div>
+      <div class="grid-item"><img src="logo3.jpg" alt="Logo 3"></div>
+      <div class="grid-item"><img src="logo4.jpg" alt="Logo 4"></div>
+      <div class="grid-item"><img src="logo5.jpg" alt="Logo 5"></div>
+      <div class="grid-item"><img src="logo6.jpg" alt="Logo 6"></div>
+      <div class="grid-item"><img src="logo7.jpg" alt="Logo 7"></div>
+      <div class="grid-item"><img src="logo8.jpg" alt="Logo 8"></div>
+      <div class="grid-item"><img src="logo9.jpg" alt="Logo 9"></div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>I'm Mohin Uddin, a passionate freelance logo designer with a knack for creating simple, timeless designs that
+      represent brands.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your-email@example.com">mohinuddinshipon10@gmail.com</a></p>
+    <p>Find me on:
+      <a href="https://linkedin.com">Whatsapp</a> |
+      <a href="https://twitter.com">Facebook</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Mohin Uddin. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
