@@ -380,3 +380,10 @@ header nav .menu-icon {
       transform: rotate(-45deg) translate(5px, -5px);
   }
 }
+.logo img{
+  margin-top: 0;
+  padding: 0;
+  height: 56px;
+  margin-right:10px; 
+
+}
