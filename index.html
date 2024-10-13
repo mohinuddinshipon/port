@@ -1,104 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-adsense-account" content="ca-pub-8129186410376726">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Advanced portfolio website for Mohin Uddin, logo designer.">
-  <title>Mohin Uddin | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="icon" href="/favicon.svg?v=1.1" type="image/svg+xml">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Mohin Uddin | Technology Insights & Innovations</title>
+    <meta name="title" content="Mohin Uddin | Technology Insights & Innovations">
+    <meta name="description" content="Explore the latest trends, insights, and innovations in technology. Stay ahead with articles on AI, software, gadgets, cybersecurity, and more.">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/">
+    <meta property="og:title" content="Mohin Uddin | Technology Insights & Innovations">
+    <meta property="og:description" content="Discover cutting-edge technology trends and in-depth guides on AI, machine learning, and more. Stay updated with the latest tech innovations.">
+    <meta property="og:image" content="https://www.yourwebsite.com/image/social-share.png">
+    
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.yourwebsite.com/">
+    <meta property="twitter:title" content="Mohin Uddin | Technology Insights & Innovations">
+    <meta property="twitter:description" content="Explore in-depth articles on technology, software, AI, and more. Your hub for the latest trends and guides.">
+    <meta property="twitter:image" content="https://www.yourwebsite.com/image/social-share.png">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="image/favicon.svg" type="image/x-icon">
 
+    <!-- Additional Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Mohin Uddin">
+    <meta name="keywords" content="technology, AI, artificial intelligence, machine learning, software, gadgets, cybersecurity, technology trends, tech news, coding tutorials">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="#home"><img src="favicon.svg" alt=""> Mohin Uddin</a>
-      </div>
-      <div class="menu-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul id="menu-links">
-        <li><a href="#home" onclick="closeMenu()">Home</a></li>
-        <li><a href="#about" onclick="closeMenu()">About</a></li>
-        <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
-        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="image/logo.svg" alt="main-logo" width="64"> Mohin Uddin
+        </div>
 
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </div>
 
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
 
-  <!-- Home Section -->
-  <section id="home" class="hero-section">
-    <div class="hero-content">
-      <h1>Mohin Uddin</h1>
-      <p>Make your logo the best it can be.</p>
-      <a href="#portfolio" class="button">See My Work</a>
-    </div>
-  </section>
+        <div class="dark-mode-toggle">
+            <label class="switch">
+                <input type="checkbox" id="darkSwitch">
+                <span class="slider round"></span>
+            </label>
+            <span class="label-text">Dark Mode</span>
+        </div>
+    </header>
 
-  <!-- Portfolio Section (3x3 Grid) -->
-  <section id="portfolio" class="portfolio-section">
-    <h2>My Work</h2>
-    <div class="grid-container">
-      <div class="grid-item"><img src="logo1.jpg" alt="Logo 1"></div>
-      <div class="grid-item"><img src="logo2.jpg" alt="Logo 2"></div>
-      <div class="grid-item"><img src="logo3.jpg" alt="Logo 3"></div>
-      <div class="grid-item"><img src="logo4.jpg" alt="Logo 4"></div>
-      <div class="grid-item"><img src="logo5.jpg" alt="Logo 5"></div>
-      <div class="grid-item"><img src="logo6.jpg" alt="Logo 6"></div>
-      <div class="grid-item"><img src="logo7.jpg" alt="Logo 7"></div>
-      <div class="grid-item"><img src="logo8.jpg" alt="Logo 8"></div>
-      <div class="grid-item"><img src="logo9.jpg" alt="Logo 9"></div>
-    </div>
-  </section>
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="blog-grid">
+            <div class="blog-post">
+                <div class="blog-image">
+                    <img src="https://imgs.search.brave.com/XwthCd53pGywQMO_DAX8x-MDZpmkzPwiVbB3A5h0wig/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvbGludXgtcGlj/dHVyZXMtdWRqMXpu/eGljazl6azV3ei5q/cGc" alt="linux image">
+                </div>
+                <div class="blog-details">
+                    <h3 class="blog-title">সেরা ৫ Linux ডিস্ট্রো যা Windows এর বিকল্প হতে পারে</h3>
+                    <p class="blog-description">টাকা দিয়ে windows না কিনে অথবা ক্র্যাক করে না ব্যবহার করে ফ্রি linux ব্যবহার করুন। যেটি windows এর চেয়ে ও ভালো। </p>
+                </div>
+                <button class="read-more"><a href="blog1.html">Read more</a></button>
+            </div>
+            <div class="blog-post">
+                <div class="blog-image">
+                    <img src="https://via.placeholder.com/300x200" alt="Blog image">
+                </div>
+                <div class="blog-details">
+                    <h3 class="blog-title">Blog Title</h3>
+                    <p class="blog-description">A brief description that gives a minimal summary of the blog post.</p>
+                </div>
+                <button class="read-more">Read more</button>
+            </div>
+            <div class="blog-post">
+                <div class="blog-image">
+                    <img src="https://via.placeholder.com/300x200" alt="Blog image">
+                </div>
+                <div class="blog-details">
+                    <h3 class="blog-title">Blog Title</h3>
+                    <p class="blog-description">A brief description that gives a minimal summary of the blog post.</p>
+                </div>
+                <button class="read-more">Read more</button>
+            </div>
+            <div class="blog-post">
+                <div class="blog-image">
+                    <img src="https://via.placeholder.com/300x200" alt="Blog image">
+                </div>
+                <div class="blog-details">
+                    <h3 class="blog-title">Blog Title</h3>
+                    <p class="blog-description">A brief description that gives a minimal summary of the blog post.</p>
+                </div>
+                <button class="read-more">Read more</button>
+            </div>
+            
+            <!-- Repeat blog-post as needed -->
+        </div>
+    </section>
+        
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-logo">
+            <img src="image/logo.svg" alt="main-logo" width="48"> Mohin Uddin
+        </div>
+            
+        <div class="footer-social-icons">
+            Share
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
 
-  <!-- About Me Section -->
-  <section id="about" class="about-section">
-    <h2>About Me</h2>
-    <p>I'm Mohin Uddin, a passionate freelance logo designer with a knack for creating simple, timeless designs that
-      represent brands.</p>
-  </section>
+        <p>Discover something New</p>
+    </footer>
+    <script src="script.js"></script>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:mohinuddinshipon10@gmail.com">mohinuddinshipon10@gmail.com</a></p>
-    <p>Find me on:
-      <a href="https://linkedin.com">Linkedin</a> |
-      <a href="https://wa.me/+8801926079347">Whatsapp</a>
-    </p>
-    Phone: <a href="tel:+8801926079347">+8801926079347</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Mohin Uddin. All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-119ZRQNT53"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-119ZRQNT53');
-</script>
 </body>
-
 </html>

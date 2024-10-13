@@ -1,24 +1,23 @@
-// Smooth scrolling
+
+// Dark Mode Toggle
+const darkSwitch = document.getElementById('darkSwitch');
+const body = document.body;
+
+darkSwitch.addEventListener('change', function () {
+    if (this.checked) {
+        body.classList.add('dark-mode');
+    } else {
+        body.classList.remove('dark-mode');
+    }
+});
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
-  });
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
-function toggleMenu() {
-    const menu = document.getElementById('menu-links');
-    const menuIcon = document.querySelector('.menu-icon');
-    menu.classList.toggle('show-menu');
-    menuIcon.classList.toggle('open');
-}
-
-function closeMenu() {
-    const menu = document.getElementById('menu-links');
-    const menuIcon = document.querySelector('.menu-icon');
-    menu.classList.remove('show-menu'); // Close the menu
-    menuIcon.classList.remove('open'); // Reset hamburger icon
-}
 
